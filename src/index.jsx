@@ -206,7 +206,7 @@ const buildSrcSet = (asset, config) => {
   }
 
   return Object.values(
-    [0.5, 0.75, 1, 1.5, 2].reduce((set, dpr) => {
+    [0.5, 0.75, 1].reduce((set, dpr) => {
       const url = imageUrl(asset, { ...config, dpr })
       const size = Math.round(
         // For modes where Sanity will not scale up, determine
