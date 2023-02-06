@@ -11,7 +11,7 @@ esbuild
     bundle: true,
     minify: false,
     entryPoints: ["src/index.jsx"],
-    outdir: ".",
+    outdir: "build",
     external: [
       "@emotion/react",
       "@sanity/image-url",
@@ -39,7 +39,7 @@ esbuild
     bundle: false,
     minify: false,
     entryPoints: ["src/gatsby-node.js"],
-    outdir: ".",
+    outdir: "build",
     platform: "node",
   })
   .catch(handleError)
