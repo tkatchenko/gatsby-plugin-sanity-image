@@ -1,9 +1,15 @@
 const esbuild = require("esbuild")
+const fs = require('fs')
 
 const handleError = (e) => {
   console.error(e)
   process.exit(1)
 }
+
+// Copy package.json
+fs.copyFile('package.json', 'build/package.json', (err) => {
+  if (err) throw err;
+});
 
 // Client-side (browser) targeted files
 esbuild
