@@ -7,7 +7,7 @@ const handleError = (e) => {
 }
 
 // Copy package.json
-fs.copyFile('package.json', 'build/package.json', (err) => {
+fs.copyFile('./package.json', './build/package.json', (err) => {
   if (err) throw err;
 });
 
