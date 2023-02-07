@@ -6,11 +6,6 @@ const handleError = (e) => {
   process.exit(1)
 }
 
-// Copy package.json
-fs.copyFile('./package.json', './build/package.json', (err) => {
-  if (err) throw err;
-});
-
 // Client-side (browser) targeted files
 esbuild
   .build({

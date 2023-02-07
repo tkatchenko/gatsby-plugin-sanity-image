@@ -1,0 +1,62 @@
+{
+  "name": "gatsby-plugin-sanity-image",
+  "version": "0.13.3",
+  "description": "Gatsby plugin providing easy responsive behavior for Sanity-hosted images",
+  "keywords": [
+    "sanity",
+    "sanity-image",
+    "gatsby",
+    "gatsby-plugin",
+    "gatsby-image",
+    "image-url",
+    "lazy-loading",
+    "srcset",
+    "lqip",
+    "react",
+    "graphql"
+  ],
+  "main": "index.js",
+  "types": "index.d.ts",
+  "repository": "https://github.com/coreyward/gatsby-plugin-sanity-image",
+  "author": "Corey Ward <corey@hey.com>",
+  "license": "MPL-2.0",
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "gatsby-node.js"
+  ],
+  "dependencies": {
+    "@emotion/react": "^11.10.0",
+    "@sanity/image-url": "^1.0.1"
+  },
+  "peerDependencies": {
+    "gatsby": "^2.2.0 || ^3.0.0 || ^4.0.0 || ^5.0.0",
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.25",
+    "@types/react": "^17.0.1",
+    "esbuild": "^0.13.8",
+    "eslint": "^7.7.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react-hooks": "^4.1.0",
+    "eslint-plugin-standard": "^4.0.1",
+    "prettier": "^2.4.1",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.0",
+    "typescript": "^4.4.4"
+  },
+  "resolutions": {
+    "chokidar": "^3.4.0"
+  },
+  "scripts": {
+    "prebuild": "tsc",
+    "build": "node ./build.js"
+  }
+}
